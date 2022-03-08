@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -23,9 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = root.embedInNavigationController()
             self.window = window
             window.makeKeyAndVisible()
-            if #available(iOS 13.0, *) {
-                window.overrideUserInterfaceStyle = .light
-            }
+            window.overrideUserInterfaceStyle = .light
         }else {
             return
         }

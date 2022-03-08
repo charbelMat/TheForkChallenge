@@ -10,7 +10,8 @@ import UIKit
 class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     var tableView: UITableView!
-    var restaurants:Array = [RestaurantModel]()
+    var restaurants: Array = [RestaurantModel]()
+    var sortButton: UIBarButtonItem!
     var sortingType = "name"
     let themeColor = UIColor(red: 102/255, green: 146/255, blue: 76/255, alpha: 1)
     
@@ -22,7 +23,9 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
         self.view.backgroundColor = .white
         
         navigationController?.navigationBar.isHidden = false
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: #selector(sortAction))
+        self.sortButton = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: #selector(sortAction))
+        self.sortButton.isEnabled = false
+        navigationItem.rightBarButtonItem = self.sortButton
         navigationItem.rightBarButtonItem?.tintColor = themeColor
 
         self.tableView = UITableView();
@@ -52,6 +55,9 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
     }
     func reloadTableData(){
         self.restaurants = RestaurantsDataModel.shared.getAllSortedBy(sortingType: self.sortingType)
+        if (self.restaurants.count > 0){
+            self.sortButton.isEnabled = true
+        }
         self.tableView.reloadData()
     }
     func numberOfSections(in tableView: UITableView) -> Int {
