@@ -8,6 +8,7 @@
 
 - The architecture used is MVC considering the size of the application
  
+- The application have been tested and ready for deployment and Unitary tests have been put in place for the main fonctionalities in the The_ForkTests.swift file.
 
 ## Preparing  IDE
 
