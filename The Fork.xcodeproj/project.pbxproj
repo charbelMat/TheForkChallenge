@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47158EB9E066E5F6E1E92393 /* Pods_The_Fork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D459105B9F28919CECAB54 /* Pods_The_Fork.framework */; };
 		EFCACE9F27D7903700972A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACE9E27D7903700972A22 /* AppDelegate.swift */; };
 		EFCACEA127D7903700972A22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACEA027D7903700972A22 /* SceneDelegate.swift */; };
-		EFCACEA327D7903700972A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACEA227D7903700972A22 /* ViewController.swift */; };
+		EFCACEA327D7903700972A22 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACEA227D7903700972A22 /* RestaurantsViewController.swift */; };
 		EFCACEA627D7903700972A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCACEA427D7903700972A22 /* Main.storyboard */; };
 		EFCACEA827D7903800972A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCACEA727D7903800972A22 /* Assets.xcassets */; };
 		EFCACEAB27D7903800972A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCACEA927D7903800972A22 /* LaunchScreen.storyboard */; };
 		EFCACEB627D7903800972A22 /* The_ForkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACEB527D7903800972A22 /* The_ForkTests.swift */; };
 		EFCACEC027D7903800972A22 /* The_ForkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACEBF27D7903800972A22 /* The_ForkUITests.swift */; };
 		EFCACEC227D7903800972A22 /* The_ForkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACEC127D7903800972A22 /* The_ForkUITestsLaunchTests.swift */; };
+		EFCACED327D7913700972A22 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACED227D7913700972A22 /* RestaurantTableViewCell.swift */; };
+		EFCACED627D7915900972A22 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACED527D7915800972A22 /* RestaurantModel.swift */; };
+		EFCACED827D7918800972A22 /* RestaurantsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACED727D7918800972A22 /* RestaurantsDataModel.swift */; };
+		EFCACEDB27D791B500972A22 /* UIViewControllerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACEDA27D791B500972A22 /* UIViewControllerEx.swift */; };
+		EFCACEDD27D7944C00972A22 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCACEDC27D7944C00972A22 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AA2F8C4C2D8E10D88E7A0BA /* Pods-The Fork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Fork.release.xcconfig"; path = "Target Support Files/Pods-The Fork/Pods-The Fork.release.xcconfig"; sourceTree = "<group>"; };
+		78D459105B9F28919CECAB54 /* Pods_The_Fork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Fork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA88419BC143EDC28C2422E /* Pods-The Fork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Fork.debug.xcconfig"; path = "Target Support Files/Pods-The Fork/Pods-The Fork.debug.xcconfig"; sourceTree = "<group>"; };
 		EFCACE9B27D7903700972A22 /* The Fork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Fork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCACE9E27D7903700972A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCACEA027D7903700972A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EFCACEA227D7903700972A22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFCACEA227D7903700972A22 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
 		EFCACEA527D7903700972A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFCACEA727D7903800972A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFCACEAA27D7903800972A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,11 @@
 		EFCACEBB27D7903800972A22 /* The ForkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The ForkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCACEBF27D7903800972A22 /* The_ForkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_ForkUITests.swift; sourceTree = "<group>"; };
 		EFCACEC127D7903800972A22 /* The_ForkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_ForkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFCACED227D7913700972A22 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		EFCACED527D7915800972A22 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		EFCACED727D7918800972A22 /* RestaurantsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsDataModel.swift; sourceTree = "<group>"; };
+		EFCACEDA27D791B500972A22 /* UIViewControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerEx.swift; sourceTree = "<group>"; };
+		EFCACEDC27D7944C00972A22 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47158EB9E066E5F6E1E92393 /* Pods_The_Fork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BF056A5E25DCEC3CF2FA679 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78D459105B9F28919CECAB54 /* Pods_The_Fork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE33A027A5716875C49F2074 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDA88419BC143EDC28C2422E /* Pods-The Fork.debug.xcconfig */,
+				4AA2F8C4C2D8E10D88E7A0BA /* Pods-The Fork.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EFCACE9227D7903700972A22 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				EFCACEB427D7903800972A22 /* The ForkTests */,
 				EFCACEBE27D7903800972A22 /* The ForkUITests */,
 				EFCACE9C27D7903700972A22 /* Products */,
+				EE33A027A5716875C49F2074 /* Pods */,
+				2BF056A5E25DCEC3CF2FA679 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +133,11 @@
 		EFCACE9D27D7903700972A22 /* The Fork */ = {
 			isa = PBXGroup;
 			children = (
+				EFCACED927D7919B00972A22 /* Extensions */,
+				EFCACED427D7913E00972A22 /* Managers */,
+				EFCACECE27D790EE00972A22 /* Restaurants */,
 				EFCACE9E27D7903700972A22 /* AppDelegate.swift */,
 				EFCACEA027D7903700972A22 /* SceneDelegate.swift */,
-				EFCACEA227D7903700972A22 /* ViewController.swift */,
 				EFCACEA427D7903700972A22 /* Main.storyboard */,
 				EFCACEA727D7903800972A22 /* Assets.xcassets */,
 				EFCACEA927D7903800972A22 /* LaunchScreen.storyboard */,
@@ -127,6 +163,57 @@
 			path = "The ForkUITests";
 			sourceTree = "<group>";
 		};
+		EFCACECE27D790EE00972A22 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				EFCACED127D7910C00972A22 /* Controller */,
+				EFCACED027D7910700972A22 /* View */,
+				EFCACECF27D790FF00972A22 /* Model */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
+		EFCACECF27D790FF00972A22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFCACED527D7915800972A22 /* RestaurantModel.swift */,
+				EFCACED727D7918800972A22 /* RestaurantsDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFCACED027D7910700972A22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFCACED227D7913700972A22 /* RestaurantTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFCACED127D7910C00972A22 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFCACEA227D7903700972A22 /* RestaurantsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFCACED427D7913E00972A22 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EFCACEDC27D7944C00972A22 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EFCACED927D7919B00972A22 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFCACEDA27D791B500972A22 /* UIViewControllerEx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFCACEC527D7903800972A22 /* Build configuration list for PBXNativeTarget "The Fork" */;
 			buildPhases = (
+				A3A9A1826C6F0BFBFDEC92E4 /* [CP] Check Pods Manifest.lock */,
 				EFCACE9727D7903700972A22 /* Sources */,
 				EFCACE9827D7903700972A22 /* Frameworks */,
 				EFCACE9927D7903700972A22 /* Resources */,
+				FA2D73691ABBD908C9E69E14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +342,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A3A9A1826C6F0BFBFDEC92E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Fork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2D73691ABBD908C9E69E14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Fork/Pods-The Fork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Fork/Pods-The Fork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Fork/Pods-The Fork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFCACE9727D7903700972A22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCACEA327D7903700972A22 /* ViewController.swift in Sources */,
+				EFCACED327D7913700972A22 /* RestaurantTableViewCell.swift in Sources */,
+				EFCACEA327D7903700972A22 /* RestaurantsViewController.swift in Sources */,
+				EFCACEDB27D791B500972A22 /* UIViewControllerEx.swift in Sources */,
 				EFCACE9F27D7903700972A22 /* AppDelegate.swift in Sources */,
+				EFCACEDD27D7944C00972A22 /* NetworkManager.swift in Sources */,
 				EFCACEA127D7903700972A22 /* SceneDelegate.swift in Sources */,
+				EFCACED827D7918800972A22 /* RestaurantsDataModel.swift in Sources */,
+				EFCACED627D7915900972A22 /* RestaurantModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +570,7 @@
 		};
 		EFCACEC627D7903800972A22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA88419BC143EDC28C2422E /* Pods-The Fork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,6 +584,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +600,7 @@
 		};
 		EFCACEC727D7903800972A22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA2F8C4C2D8E10D88E7A0BA /* Pods-The Fork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +614,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

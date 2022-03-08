@@ -25,7 +25,39 @@ class The_ForkTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
+    
+    func testFetchRestaurants() throws {
+        let statusExpectation = expectation(description: "status")
+        RestaurantsDataModel.shared.fetchRestaurants { status in
+            print(status)
+            XCTAssertEqual(status, 1)
+            self.testSortByName()
+            self.testSortByRating()
+            statusExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 30) { (error) in
+            XCTAssertNotNil(statusExpectation)
+        }
+    }
 
+    func testSortByName() {
+        let array = RestaurantsDataModel.shared.getAllSortedBy(sortingType: "name")
+        XCTAssert((array as Any) is [RestaurantModel])
+    }
+    
+    func testSortByRating() {
+        let array = RestaurantsDataModel.shared.getAllSortedBy(sortingType: "rating")
+        XCTAssert((array as Any) is [RestaurantModel])
+    }
+    
+    func testAddFavorite() throws {
+        RestaurantsDataModel.shared.setFavorite(uuid: "4eg4e2bn-1080-4e1e-8438-6t90ht1230936", isFav: "1")
+    }
+    
+    func testRemoveFavorite() throws {
+        RestaurantsDataModel.shared.setFavorite(uuid: "4eg4e2bn-1080-4e1e-8438-6t90ht1230936", isFav: "0")
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
